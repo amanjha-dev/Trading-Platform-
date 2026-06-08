@@ -1,4 +1,4 @@
-# go-trader
+# Go based Trading Platform\
 
 A financial exchange written in Go including complete order book, fix protocol, and market data distribution.
 
