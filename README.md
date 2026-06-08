@@ -4,8 +4,6 @@ A financial exchange written in Go including complete order book, fix protocol, 
 
 It was originally developed to further my knowledge of Go and test its suitability for high-performance financial applications, and it has continued to evolve into an ideal teaching/reference project for Go (interfaces, low-level networking, web development, json, Go routines, etc.).
 
-Check out [cpp-trader](https://github.com/robaho/cpp-trader) for a C++ version, albeit with less features.
-
 ## Features
 
 - client to server communication using:
@@ -13,7 +11,7 @@ Check out [cpp-trader](https://github.com/robaho/cpp-trader) for a C++ version, 
     - gRPC
 - UDP multicast for market data distribution.
 - TCP replay of dropped market data packets.
-- Uses the high-performance fixed point library [fixed](https://github.com/robaho/fixed) which I also developed.
+- Uses the high-performance fixed point library 
 - Includes multiple clients:
     - command line 
     - server-side web using Go templates
@@ -23,7 +21,7 @@ Check out [cpp-trader](https://github.com/robaho/cpp-trader) for a C++ version, 
 - Supported order types:
     - limit
     - market
-- [REST api](https://github.com/robaho/go-trader/blob/2b92b5652eb5c6a93b83262f45ba1f237fb180b0/internal/exchange/webserver.go#L41-L54)
+- [REST api](https://github.com/amanjha-dev/Trading-Platform-/blob/main/internal/exchange/webserver.go)
 
 The exchange is designed to allow for easy back-testing of trading strategies. It supports limit and market orders.
 
@@ -110,9 +108,3 @@ access full book (use guest/password to login)
 localhost:8080/api/book/SYMBOL
 
 localhost:8080/api/stats/SYMBOL
-
-# screen shots
-
-![client screen shot](doc/clientss.png)
-![web screen shot](doc/webss.png)
-![lit screen shot](doc/litss.png)
